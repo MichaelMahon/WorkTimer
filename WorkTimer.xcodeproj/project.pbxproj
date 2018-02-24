@@ -13,6 +13,8 @@
 		723EF39D203FC9D600E27096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723EF39B203FC9D600E27096 /* Main.storyboard */; };
 		723EF39F203FC9D600E27096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723EF39E203FC9D600E27096 /* Assets.xcassets */; };
 		723EF3A2203FC9D600E27096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723EF3A0203FC9D600E27096 /* LaunchScreen.storyboard */; };
+		723EF3AA203FD5A800E27096 /* EditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF3A9203FD5A800E27096 /* EditTimeViewController.swift */; };
+		723EF3AC203FD9AD00E27096 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF3AB203FD9AD00E27096 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		723EF39E203FC9D600E27096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723EF3A1203FC9D600E27096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		723EF3A3203FC9D600E27096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723EF3A9203FD5A800E27096 /* EditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTimeViewController.swift; sourceTree = "<group>"; };
+		723EF3AB203FD9AD00E27096 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				723EF395203FC9D600E27096 /* AppDelegate.swift */,
 				723EF397203FC9D600E27096 /* FirstViewController.swift */,
 				723EF399203FC9D600E27096 /* SecondViewController.swift */,
+				723EF3A9203FD5A800E27096 /* EditTimeViewController.swift */,
 				723EF39B203FC9D600E27096 /* Main.storyboard */,
 				723EF39E203FC9D600E27096 /* Assets.xcassets */,
 				723EF3A0203FC9D600E27096 /* LaunchScreen.storyboard */,
 				723EF3A3203FC9D600E27096 /* Info.plist */,
+				723EF3AB203FD9AD00E27096 /* Data.swift */,
 			);
 			path = WorkTimer;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				723EF39A203FC9D600E27096 /* SecondViewController.swift in Sources */,
+				723EF3AC203FD9AD00E27096 /* Data.swift in Sources */,
 				723EF396203FC9D600E27096 /* AppDelegate.swift in Sources */,
 				723EF398203FC9D600E27096 /* FirstViewController.swift in Sources */,
+				723EF3AA203FD5A800E27096 /* EditTimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZL5FF9567;
 				INFOPLIST_FILE = WorkTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikemahon.WorkTimer;
@@ -293,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZL5FF9567;
 				INFOPLIST_FILE = WorkTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikemahon.WorkTimer;
