@@ -28,7 +28,7 @@ class FirstViewController: UIViewController {
         
         if let savedEndTime = UserDefaults.standard.object(forKey: "SAVED_END_TIME") as? Date {
             let timeSaved = UserDefaults.standard.object(forKey: "TIME_SAVED") as? Date
-            if timeSaved != nil && timeSaved!.timeIntervalSinceNow < 80000 {
+            if timeSaved != nil {
                 endTime = savedEndTime
                 dateSet = true
             }
@@ -64,6 +64,11 @@ class FirstViewController: UIViewController {
         
         UserDefaults.standard.set(endTime, forKey: "SAVED_END_TIME")
         UserDefaults.standard.set(Date(), forKey: "TIME_SAVED")
+        
+        let userDefaults = UserDefaults(suiteName: "group.mikemahon.WorkTimer")
+        userDefaults!.set(endTime, forKey: "SAVED_END_TIME")
+        userDefaults!.set(Date(), forKey: "TIME_SAVED")
+        userDefaults!.synchronize()
     }
     
     @objc func updateTimeLeft() {

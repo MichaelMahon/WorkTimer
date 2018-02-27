@@ -14,8 +14,37 @@
 		723EF39F203FC9D600E27096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723EF39E203FC9D600E27096 /* Assets.xcassets */; };
 		723EF3A2203FC9D600E27096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723EF3A0203FC9D600E27096 /* LaunchScreen.storyboard */; };
 		723EF3AA203FD5A800E27096 /* EditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF3A9203FD5A800E27096 /* EditTimeViewController.swift */; };
-		723EF3AC203FD9AD00E27096 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF3AB203FD9AD00E27096 /* Data.swift */; };
+		72E2CE152041392D002E1A2B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E2CE142041392D002E1A2B /* NotificationCenter.framework */; };
+		72E2CE182041392D002E1A2B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2CE172041392D002E1A2B /* TodayViewController.swift */; };
+		72E2CE1B2041392D002E1A2B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E2CE192041392D002E1A2B /* MainInterface.storyboard */; };
+		72E2CE1F2041392D002E1A2B /* Work Timer Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72E2CE122041392D002E1A2B /* Work Timer Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72E2CE2720413B69002E1A2B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF3AB203FD9AD00E27096 /* Data.swift */; };
+		72E2CE2920413B75002E1A2B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2CE2820413B75002E1A2B /* Data.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72E2CE1D2041392D002E1A2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 723EF38A203FC9D600E27096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72E2CE112041392D002E1A2B;
+			remoteInfo = "Work Timer Today";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72E2CE232041392D002E1A2B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				72E2CE1F2041392D002E1A2B /* Work Timer Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		723EF392203FC9D600E27096 /* WorkTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +57,14 @@
 		723EF3A3203FC9D600E27096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		723EF3A9203FD5A800E27096 /* EditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTimeViewController.swift; sourceTree = "<group>"; };
 		723EF3AB203FD9AD00E27096 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		72E2CE122041392D002E1A2B /* Work Timer Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Work Timer Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72E2CE142041392D002E1A2B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		72E2CE172041392D002E1A2B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		72E2CE1A2041392D002E1A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		72E2CE1C2041392D002E1A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E2CE2820413B75002E1A2B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		72E2CE2A204140E3002E1A2B /* Work Timer Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work Timer Today.entitlements"; sourceTree = "<group>"; };
+		72E2CE2B20414102002E1A2B /* WorkTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkTimer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +75,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72E2CE0F2041392D002E1A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E2CE152041392D002E1A2B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -45,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				723EF394203FC9D600E27096 /* WorkTimer */,
+				72E2CE162041392D002E1A2B /* Work Timer Today */,
+				72E2CE132041392D002E1A2B /* Frameworks */,
 				723EF393203FC9D600E27096 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				723EF392203FC9D600E27096 /* WorkTimer.app */,
+				72E2CE122041392D002E1A2B /* Work Timer Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +108,7 @@
 		723EF394203FC9D600E27096 /* WorkTimer */ = {
 			isa = PBXGroup;
 			children = (
+				72E2CE2B20414102002E1A2B /* WorkTimer.entitlements */,
 				723EF395203FC9D600E27096 /* AppDelegate.swift */,
 				723EF397203FC9D600E27096 /* FirstViewController.swift */,
 				723EF399203FC9D600E27096 /* SecondViewController.swift */,
@@ -73,6 +122,26 @@
 			path = WorkTimer;
 			sourceTree = "<group>";
 		};
+		72E2CE132041392D002E1A2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72E2CE142041392D002E1A2B /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72E2CE162041392D002E1A2B /* Work Timer Today */ = {
+			isa = PBXGroup;
+			children = (
+				72E2CE2A204140E3002E1A2B /* Work Timer Today.entitlements */,
+				72E2CE172041392D002E1A2B /* TodayViewController.swift */,
+				72E2CE192041392D002E1A2B /* MainInterface.storyboard */,
+				72E2CE1C2041392D002E1A2B /* Info.plist */,
+				72E2CE2820413B75002E1A2B /* Data.swift */,
+			);
+			path = "Work Timer Today";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +152,34 @@
 				723EF38E203FC9D600E27096 /* Sources */,
 				723EF38F203FC9D600E27096 /* Frameworks */,
 				723EF390203FC9D600E27096 /* Resources */,
+				72E2CE232041392D002E1A2B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				72E2CE1E2041392D002E1A2B /* PBXTargetDependency */,
 			);
 			name = WorkTimer;
 			productName = WorkTimer;
 			productReference = 723EF392203FC9D600E27096 /* WorkTimer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		72E2CE112041392D002E1A2B /* Work Timer Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72E2CE202041392D002E1A2B /* Build configuration list for PBXNativeTarget "Work Timer Today" */;
+			buildPhases = (
+				72E2CE0E2041392D002E1A2B /* Sources */,
+				72E2CE0F2041392D002E1A2B /* Frameworks */,
+				72E2CE102041392D002E1A2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Work Timer Today";
+			productName = "Work Timer Today";
+			productReference = 72E2CE122041392D002E1A2B /* Work Timer Today.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +194,20 @@
 					723EF391203FC9D600E27096 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					72E2CE112041392D002E1A2B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				723EF391203FC9D600E27096 /* WorkTimer */,
+				72E2CE112041392D002E1A2B /* Work Timer Today */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +241,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72E2CE102041392D002E1A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E2CE1B2041392D002E1A2B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,14 +257,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				723EF39A203FC9D600E27096 /* SecondViewController.swift in Sources */,
-				723EF3AC203FD9AD00E27096 /* Data.swift in Sources */,
+				72E2CE2720413B69002E1A2B /* Data.swift in Sources */,
 				723EF396203FC9D600E27096 /* AppDelegate.swift in Sources */,
 				723EF398203FC9D600E27096 /* FirstViewController.swift in Sources */,
 				723EF3AA203FD5A800E27096 /* EditTimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72E2CE0E2041392D002E1A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E2CE182041392D002E1A2B /* TodayViewController.swift in Sources */,
+				72E2CE2920413B75002E1A2B /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72E2CE1E2041392D002E1A2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72E2CE112041392D002E1A2B /* Work Timer Today */;
+			targetProxy = 72E2CE1D2041392D002E1A2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		723EF39B203FC9D600E27096 /* Main.storyboard */ = {
@@ -170,6 +298,14 @@
 				723EF3A1203FC9D600E27096 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		72E2CE192041392D002E1A2B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72E2CE1A2041392D002E1A2B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -285,7 +421,9 @@
 		723EF3A7203FC9D600E27096 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WorkTimer/WorkTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZL5FF9567;
 				INFOPLIST_FILE = WorkTimer/Info.plist;
@@ -300,13 +438,47 @@
 		723EF3A8203FC9D600E27096 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WorkTimer/WorkTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZL5FF9567;
 				INFOPLIST_FILE = WorkTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikemahon.WorkTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72E2CE212041392D002E1A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Work Timer Today/Work Timer Today.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZL5FF9567;
+				INFOPLIST_FILE = "Work Timer Today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikemahon.WorkTimer.Work-Timer-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72E2CE222041392D002E1A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Work Timer Today/Work Timer Today.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZL5FF9567;
+				INFOPLIST_FILE = "Work Timer Today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikemahon.WorkTimer.Work-Timer-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,6 +501,15 @@
 			buildConfigurations = (
 				723EF3A7203FC9D600E27096 /* Debug */,
 				723EF3A8203FC9D600E27096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72E2CE202041392D002E1A2B /* Build configuration list for PBXNativeTarget "Work Timer Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72E2CE212041392D002E1A2B /* Debug */,
+				72E2CE222041392D002E1A2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
