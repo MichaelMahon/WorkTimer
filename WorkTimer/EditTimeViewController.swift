@@ -64,6 +64,8 @@ class EditTimeViewController: UIViewController {
         
         startTimePicker.setDate(selectedStartTime, animated: true)
         endTimePicker.setDate(selectedEndTime, animated: true)
+        
+        print("Start: \(selectedStartTime) END: \(selectedEndTime)")
     }
     
     func getTimeInterval() -> Double {

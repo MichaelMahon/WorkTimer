@@ -83,6 +83,11 @@ class FirstViewController: UIViewController {
         
         let time = components.second!
         
+        print("Start \(startTime)")
+        print("End: \(endTime)")
+        
+        print("TIME: \(time)")
+        
         if (time >= 0) {
             let hours = Int(time) / 3600
             let minutes = Int(time) / 60 % 60
@@ -91,6 +96,8 @@ class FirstViewController: UIViewController {
             
             timeLeftLbl.text = timeString
         } else {
+            endTime = Date()
+            updateEndTime()
             timeLeftLbl.text = EMPTY_DATE
             timer.invalidate()
         }

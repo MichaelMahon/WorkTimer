@@ -43,10 +43,10 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Rnv-4x-i4W">
-                                                <rect key="frame" x="30" y="12" width="75" height="20.5"/>
+                                                <rect key="frame" x="30" y="12" width="80" height="20.5"/>
                                                 <color key="backgroundColor" red="1" green="0.44135967939999998" blue="0.2212225159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="75" id="kwq-Xf-5qk"/>
+                                                    <constraint firstAttribute="width" constant="80" id="kwq-Xf-5qk"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -86,10 +86,10 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="MUJ-1o-7cq">
-                                                <rect key="frame" x="30" y="12" width="75" height="20.5"/>
+                                                <rect key="frame" x="30" y="12" width="80" height="20.5"/>
                                                 <color key="backgroundColor" red="1" green="0.44135967939999998" blue="0.2212225159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="75" id="iqi-3P-TVu"/>
+                                                    <constraint firstAttribute="width" constant="80" id="iqi-3P-TVu"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
