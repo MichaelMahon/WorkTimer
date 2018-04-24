@@ -2,15 +2,22 @@
 
 import UIKit
 
-var str = "Hello, playground"
+let email = "feedback@buoycast.com"
+let subject = "Buoycast Feedback"
+let body = "%0A%0A%0A%0A%0A%0A" +
+    "Device Information:%0A" +
+    "Device: Iphone X%0A" +
+    "iOS Version: 11.3%0A" +
+    "Buoycast Version: 2.0%0A" +
+    "Unlocked Buoycast Pro: true%0A" +
+    "Push Notifications Enabled: true%0A" +
+"Push Notification ID: fewfwefwefwefwdfdsffsdf"
 
+var emailString = email + subject + body
 
-let dateFormatter = DateFormatter()
-dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-let startTime = Date()//dateFormatter.date(from: "2018-02-27 11:51:34")
-let endTime = dateFormatter.date(from: "2018-02-27 11:51:34")
+emailString = emailString.replacingOccurrences(of: " ", with: "%20")
 
-let calendar = NSCalendar.current
-let components = calendar.dateComponents([.second], from: Date(), to: endTime!)
-
-let time = components.second
+if let url = URL(string: email + subject + body) {
+    print(url)
+    UIApplication.shared.open(url)
+}

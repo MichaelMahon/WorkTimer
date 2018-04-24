@@ -65,10 +65,11 @@ class FirstViewController: UIViewController {
         UserDefaults.standard.set(endTime, forKey: "SAVED_END_TIME")
         UserDefaults.standard.set(Date(), forKey: "TIME_SAVED")
         
-        let userDefaults = UserDefaults(suiteName: "group.mikemahon.WorkTimer")
-        userDefaults!.set(endTime, forKey: "SAVED_END_TIME")
-        userDefaults!.set(Date(), forKey: "TIME_SAVED")
-        userDefaults!.synchronize()
+        if let userDefaults = UserDefaults(suiteName: "group.mikemahon.WorkTimer") {
+            userDefaults.set(endTime, forKey: "SAVED_END_TIME")
+            userDefaults.set(Date(), forKey: "TIME_SAVED")
+            userDefaults.synchronize()
+        }
     }
     
     @objc func updateTimeLeft() {
@@ -96,10 +97,14 @@ class FirstViewController: UIViewController {
             
             timeLeftLbl.text = timeString
         } else {
-            endTime = Date()
-            updateEndTime()
             timeLeftLbl.text = EMPTY_DATE
             timer.invalidate()
+            
+            if let userDefaults = UserDefaults(suiteName: "group.mikemahon.WorkTimer") {
+                userDefaults.removeObject(forKey: "SAVED_END_TIME")
+                userDefaults.set(Date(), forKey: "TIME_SAVED")
+                userDefaults.synchronize()
+            }
         }
     }
     
