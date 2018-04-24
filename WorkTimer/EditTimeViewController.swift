@@ -88,49 +88,6 @@ class EditTimeViewController: UIViewController {
         
         startTimePicker.setDate(selectedStartTime, animated: true)
         endTimePicker.setDate(selectedEndTime, animated: true)
-        
-        print("Start: \(selectedStartTime) END: \(selectedEndTime)")
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Only One Hour Left!"
-        content.body = "Just sixty minutes left. You can do it!"
-        content.sound = UNNotificationSound.default()
-        
-        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: (newEndTime?.addingTimeInterval(-3600))!)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate,
-                                                    repeats: false)
-        
-        let identifier = "HourLeftNotification"
-        let request = UNNotificationRequest(identifier: identifier,
-                                            content: content, trigger: trigger)
-        let center = UNUserNotificationCenter.current()
-        
-        center.removeAllPendingNotificationRequests()
-        
-        center.add(request, withCompletionHandler: { (error) in
-            if let error = error {
-                print(error)
-            }
-        })
-        
-        let timesUpContent = UNMutableNotificationContent()
-        timesUpContent.title = "Time to go!"
-        timesUpContent.body = "Head for the door. Its time to blow this ham shack"
-        timesUpContent.sound = UNNotificationSound.default()
-        
-        let timesUpTriggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: (newEndTime?.addingTimeInterval(-3600))!)
-        let timesUpTrigger = UNCalendarNotificationTrigger(dateMatching: timesUpTriggerDate,
-                                                    repeats: false)
-        
-        let timesUpIdentifier = "HourLeftNotification"
-        let timesUpRequest = UNNotificationRequest(identifier: timesUpIdentifier,
-                                            content: timesUpContent, trigger: timesUpTrigger)
-        
-        center.add(timesUpRequest, withCompletionHandler: { (error) in
-            if let error = error {
-                print(error)
-            }
-        })
     }
     
     func getTimeInterval() -> Double {

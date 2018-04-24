@@ -13,6 +13,12 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    enum ShortcutType: String {
+        case startTimer = "com.mikemahon.worktimer.startwork"
+    }
+    
+    static let applicationShortcutUserInfoIconKey = "applicationShortcutUserInfoIconKey"
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -27,7 +33,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        return true
+        var launchedFromShortCut = false
+        
+        if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
+            launchedFromShortCut = true
+            handleShortCutItem(shortcutItem: shortcutItem)
+        }
+        
+        return !launchedFromShortCut
+    }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        let handledShortCutItem = handleShortCutItem(shortcutItem: shortcutItem)
+        completionHandler(handledShortCutItem)
+    }
+    
+    func handleShortCutItem(shortcutItem: UIApplicationShortcutItem) -> Bool {
+        var handled = false
+        
+        if let shortcutType = ShortcutType.init(rawValue: shortcutItem.type) {
+            // Get root navigation viewcontroller and its first controller
+            let rootNavigationViewController = window!.rootViewController as? UITabBarController
+            let rootViewController = rootNavigationViewController?.selectedViewController as? FirstViewController
+            
+            // Pop to root view controller so that approperiete segue can be performed
+            //rootNavigationViewController?.popToRootViewController(animated: false)
+            
+            switch shortcutType {
+
+            case.startTimer:
+                rootViewController?.clearAndRestartTimer()
+                handled = true
+            }
+
+        }
+        
+        return handled
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

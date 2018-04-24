@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -104,26 +104,45 @@
                                     <constraint firstAttribute="height" constant="150" id="vuD-ew-HNg"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4f-RY-dZ3">
-                                <rect key="frame" x="110" y="453" width="100" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Xyq-H6-ETg"/>
-                                    <constraint firstAttribute="height" constant="45" id="keh-bJ-zO0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Edit">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="pBf-UT-8dQ" kind="show" identifier="EditTime" id="nJ4-cu-dm3"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-GC-3nX">
                                 <rect key="frame" x="16" y="28" width="288" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wob-mP-r4B">
+                                <rect key="frame" x="32" y="453" width="256" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4f-RY-dZ3">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Xyq-H6-ETg"/>
+                                            <constraint firstAttribute="height" constant="45" id="keh-bJ-zO0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="pBf-UT-8dQ" kind="show" identifier="EditTime" id="nJ4-cu-dm3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VW-Zg-NdP">
+                                        <rect key="frame" x="156" y="0.0" width="100" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="ZzP-Oy-D0H"/>
+                                            <constraint firstAttribute="width" constant="100" id="kXg-rw-1yW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearBtnTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Atf-Fv-tgl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.44313725490196076" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -132,13 +151,14 @@
                             <constraint firstItem="aOw-Ip-PSt" firstAttribute="top" secondItem="CUW-GC-3nX" secondAttribute="bottom" constant="25" id="8DJ-BK-R2f"/>
                             <constraint firstItem="aOw-Ip-PSt" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="8ht-lz-gKt"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="aOw-Ip-PSt" secondAttribute="trailing" constant="16" id="Aq7-fL-YdQ"/>
-                            <constraint firstItem="h4f-RY-dZ3" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="MRG-lp-2Cf"/>
+                            <constraint firstItem="wob-mP-r4B" firstAttribute="top" secondItem="YFQ-mF-XrT" secondAttribute="bottom" constant="20" id="Iad-gD-9yr"/>
                             <constraint firstItem="CUW-GC-3nX" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="Sqj-pN-kT4"/>
                             <constraint firstItem="YFQ-mF-XrT" firstAttribute="top" secondItem="aOw-Ip-PSt" secondAttribute="bottom" constant="20" id="TPv-o4-ulq"/>
-                            <constraint firstItem="h4f-RY-dZ3" firstAttribute="top" secondItem="YFQ-mF-XrT" secondAttribute="bottom" constant="20" id="UHY-4h-OeM"/>
                             <constraint firstItem="YFQ-mF-XrT" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="Y6Q-5A-2Bq"/>
                             <constraint firstItem="CUW-GC-3nX" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="8" id="dpQ-aA-FFG"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="CUW-GC-3nX" secondAttribute="trailing" constant="16" id="guW-9j-yJn"/>
+                            <constraint firstItem="wob-mP-r4B" firstAttribute="width" secondItem="YFQ-mF-XrT" secondAttribute="width" constant="-32" id="on0-ow-U6y"/>
+                            <constraint firstItem="wob-mP-r4B" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="wot-sU-UsG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                         <connections>
@@ -147,6 +167,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Countdown" image="first" selectedImage="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="clearBtn" destination="5VW-Zg-NdP" id="9J1-wW-Pht"/>
                         <outlet property="editBtn" destination="h4f-RY-dZ3" id="j9x-g3-oIg"/>
                         <outlet property="endTimeContainer" destination="YFQ-mF-XrT" id="bz1-AL-L4C"/>
                         <outlet property="endTimeLbl" destination="QtL-lK-E45" id="dn1-6I-kTO"/>

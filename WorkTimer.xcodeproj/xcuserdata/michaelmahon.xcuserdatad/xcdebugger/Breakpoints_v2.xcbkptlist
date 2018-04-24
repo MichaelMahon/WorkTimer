@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WorkTimer/FirstViewController.swift"
-            timestampString = "541618076.172428"
+            timestampString = "546302173.494759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WorkTimer/FirstViewController.swift"
-            timestampString = "541618076.172722"
+            timestampString = "546302173.4954669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "updateTimeLeft()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WorkTimer/FirstViewController.swift"
-            timestampString = "541618076.1728359"
+            timestampString = "546302173.49579"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "updateTimeLeft()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,93 +58,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WorkTimer/FirstViewController.swift"
-            timestampString = "541618076.172929"
+            timestampString = "546302173.496087"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "updateTimeLeft()"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "clearAndRestartTimer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WorkTimer/EditTimeViewController.swift"
-            timestampString = "546235036.1777411"
+            filePath = "WorkTimer/AppDelegate.swift"
+            timestampString = "546302173.496363"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "updateEndTime()"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "handleShortCutItem(shortcutItem:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WorkTimer/EditTimeViewController.swift"
-            timestampString = "546235039.804131"
+            filePath = "WorkTimer/AppDelegate.swift"
+            timestampString = "546302173.496701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "updateEndTime()"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "handleShortCutItem(shortcutItem:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WorkTimer/EditTimeViewController.swift"
-            timestampString = "546235143.151"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "updateEndTime()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "WorkTimer.EditTimeViewController.updateEndTime() -&gt; ()"
-                  moduleName = "WorkTimer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michaelmahon/Development/WorkTimer/WorkTimer/EditTimeViewController.swift"
-                  timestampString = "546235143.372668"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "6452">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WorkTimer.EditTimeViewController.updateEndTime() -&gt; ()"
-                  moduleName = "WorkTimer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michaelmahon/Development/WorkTimer/WorkTimer/EditTimeViewController.swift"
-                  timestampString = "546235143.379177"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130"
-                  offsetFromSymbolStart = "15">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
