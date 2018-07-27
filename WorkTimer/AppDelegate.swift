@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
             launchedFromShortCut = true
-            handleShortCutItem(shortcutItem: shortcutItem)
+            _ = handleShortCutItem(shortcutItem: shortcutItem)
         }
         
         return !launchedFromShortCut
