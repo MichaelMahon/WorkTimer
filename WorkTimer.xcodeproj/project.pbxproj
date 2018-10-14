@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		723EF396203FC9D600E27096 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF395203FC9D600E27096 /* AppDelegate.swift */; };
 		723EF398203FC9D600E27096 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF397203FC9D600E27096 /* FirstViewController.swift */; };
-		723EF39A203FC9D600E27096 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF399203FC9D600E27096 /* SecondViewController.swift */; };
 		723EF39D203FC9D600E27096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723EF39B203FC9D600E27096 /* Main.storyboard */; };
 		723EF39F203FC9D600E27096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723EF39E203FC9D600E27096 /* Assets.xcassets */; };
 		723EF3A2203FC9D600E27096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723EF3A0203FC9D600E27096 /* LaunchScreen.storyboard */; };
 		723EF3AA203FD5A800E27096 /* EditTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF3A9203FD5A800E27096 /* EditTimeViewController.swift */; };
+		72A450D22172B4CC00CC6704 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A450D02172B4CC00CC6704 /* Interface.storyboard */; };
+		72A450D42172B4CD00CC6704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A450D32172B4CD00CC6704 /* Assets.xcassets */; };
+		72A450DB2172B4CD00CC6704 /* WorkTimerWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72A450DA2172B4CD00CC6704 /* WorkTimerWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72A450E02172B4CD00CC6704 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A450DF2172B4CD00CC6704 /* InterfaceController.swift */; };
+		72A450E22172B4CD00CC6704 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A450E12172B4CD00CC6704 /* ExtensionDelegate.swift */; };
+		72A450E42172B4CD00CC6704 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A450E32172B4CD00CC6704 /* NotificationController.swift */; };
+		72A450E62172B4CD00CC6704 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A450E52172B4CD00CC6704 /* ComplicationController.swift */; };
+		72A450E82172B4CE00CC6704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A450E72172B4CE00CC6704 /* Assets.xcassets */; };
+		72A450ED2172B4CE00CC6704 /* WorkTimerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 72A450CE2172B4CC00CC6704 /* WorkTimerWatch.app */; };
 		72E2CE152041392D002E1A2B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E2CE142041392D002E1A2B /* NotificationCenter.framework */; };
 		72E2CE182041392D002E1A2B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2CE172041392D002E1A2B /* TodayViewController.swift */; };
 		72E2CE1B2041392D002E1A2B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E2CE192041392D002E1A2B /* MainInterface.storyboard */; };
@@ -23,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		72A450DC2172B4CD00CC6704 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 723EF38A203FC9D600E27096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72A450D92172B4CD00CC6704;
+			remoteInfo = "WorkTimerWatch Extension";
+		};
+		72A450EB2172B4CE00CC6704 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 723EF38A203FC9D600E27096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72A450CD2172B4CC00CC6704;
+			remoteInfo = WorkTimerWatch;
+		};
 		72E2CE1D2041392D002E1A2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 723EF38A203FC9D600E27096 /* Project object */;
@@ -33,6 +55,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		72A450F12172B4CE00CC6704 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				72A450DB2172B4CD00CC6704 /* WorkTimerWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A450F52172B4CE00CC6704 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				72A450ED2172B4CE00CC6704 /* WorkTimerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72E2CE232041392D002E1A2B /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,13 +94,24 @@
 		723EF392203FC9D600E27096 /* WorkTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723EF395203FC9D600E27096 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723EF397203FC9D600E27096 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		723EF399203FC9D600E27096 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		723EF39C203FC9D600E27096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		723EF39E203FC9D600E27096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723EF3A1203FC9D600E27096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		723EF3A3203FC9D600E27096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		723EF3A9203FD5A800E27096 /* EditTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTimeViewController.swift; sourceTree = "<group>"; };
 		723EF3AB203FD9AD00E27096 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		72A450CE2172B4CC00CC6704 /* WorkTimerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTimerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A450D12172B4CC00CC6704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		72A450D32172B4CD00CC6704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72A450D52172B4CD00CC6704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A450DA2172B4CD00CC6704 /* WorkTimerWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WorkTimerWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A450DF2172B4CD00CC6704 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		72A450E12172B4CD00CC6704 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		72A450E32172B4CD00CC6704 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		72A450E52172B4CD00CC6704 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		72A450E72172B4CE00CC6704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72A450E92172B4CE00CC6704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A450EA2172B4CE00CC6704 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		72E2CE122041392D002E1A2B /* Work Timer Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Work Timer Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E2CE142041392D002E1A2B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		72E2CE172041392D002E1A2B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +124,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		723EF38F203FC9D600E27096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A450D72172B4CD00CC6704 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,6 +153,8 @@
 			children = (
 				723EF394203FC9D600E27096 /* WorkTimer */,
 				72E2CE162041392D002E1A2B /* Work Timer Today */,
+				72A450CF2172B4CC00CC6704 /* WorkTimerWatch */,
+				72A450DE2172B4CD00CC6704 /* WorkTimerWatch Extension */,
 				72E2CE132041392D002E1A2B /* Frameworks */,
 				723EF393203FC9D600E27096 /* Products */,
 			);
@@ -101,6 +165,8 @@
 			children = (
 				723EF392203FC9D600E27096 /* WorkTimer.app */,
 				72E2CE122041392D002E1A2B /* Work Timer Today.appex */,
+				72A450CE2172B4CC00CC6704 /* WorkTimerWatch.app */,
+				72A450DA2172B4CD00CC6704 /* WorkTimerWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,7 +177,6 @@
 				72E2CE2B20414102002E1A2B /* WorkTimer.entitlements */,
 				723EF395203FC9D600E27096 /* AppDelegate.swift */,
 				723EF397203FC9D600E27096 /* FirstViewController.swift */,
-				723EF399203FC9D600E27096 /* SecondViewController.swift */,
 				723EF3A9203FD5A800E27096 /* EditTimeViewController.swift */,
 				723EF39B203FC9D600E27096 /* Main.storyboard */,
 				723EF39E203FC9D600E27096 /* Assets.xcassets */,
@@ -120,6 +185,30 @@
 				723EF3AB203FD9AD00E27096 /* Data.swift */,
 			);
 			path = WorkTimer;
+			sourceTree = "<group>";
+		};
+		72A450CF2172B4CC00CC6704 /* WorkTimerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				72A450D02172B4CC00CC6704 /* Interface.storyboard */,
+				72A450D32172B4CD00CC6704 /* Assets.xcassets */,
+				72A450D52172B4CD00CC6704 /* Info.plist */,
+			);
+			path = WorkTimerWatch;
+			sourceTree = "<group>";
+		};
+		72A450DE2172B4CD00CC6704 /* WorkTimerWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				72A450DF2172B4CD00CC6704 /* InterfaceController.swift */,
+				72A450E12172B4CD00CC6704 /* ExtensionDelegate.swift */,
+				72A450E32172B4CD00CC6704 /* NotificationController.swift */,
+				72A450E52172B4CD00CC6704 /* ComplicationController.swift */,
+				72A450E72172B4CE00CC6704 /* Assets.xcassets */,
+				72A450E92172B4CE00CC6704 /* Info.plist */,
+				72A450EA2172B4CE00CC6704 /* PushNotificationPayload.apns */,
+			);
+			path = "WorkTimerWatch Extension";
 			sourceTree = "<group>";
 		};
 		72E2CE132041392D002E1A2B /* Frameworks */ = {
@@ -154,16 +243,52 @@
 				723EF390203FC9D600E27096 /* Resources */,
 				72E2CE232041392D002E1A2B /* Embed App Extensions */,
 				72EFE8D4208EE3670044C0C4 /* ShellScript */,
+				72A450F52172B4CE00CC6704 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				72E2CE1E2041392D002E1A2B /* PBXTargetDependency */,
+				72A450EC2172B4CE00CC6704 /* PBXTargetDependency */,
 			);
 			name = WorkTimer;
 			productName = WorkTimer;
 			productReference = 723EF392203FC9D600E27096 /* WorkTimer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		72A450CD2172B4CC00CC6704 /* WorkTimerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A450F22172B4CE00CC6704 /* Build configuration list for PBXNativeTarget "WorkTimerWatch" */;
+			buildPhases = (
+				72A450CC2172B4CC00CC6704 /* Resources */,
+				72A450F12172B4CE00CC6704 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72A450DD2172B4CD00CC6704 /* PBXTargetDependency */,
+			);
+			name = WorkTimerWatch;
+			productName = WorkTimerWatch;
+			productReference = 72A450CE2172B4CC00CC6704 /* WorkTimerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		72A450D92172B4CD00CC6704 /* WorkTimerWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A450EE2172B4CE00CC6704 /* Build configuration list for PBXNativeTarget "WorkTimerWatch Extension" */;
+			buildPhases = (
+				72A450D62172B4CD00CC6704 /* Sources */,
+				72A450D72172B4CD00CC6704 /* Frameworks */,
+				72A450D82172B4CD00CC6704 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WorkTimerWatch Extension";
+			productName = "WorkTimerWatch Extension";
+			productReference = 72A450DA2172B4CD00CC6704 /* WorkTimerWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		72E2CE112041392D002E1A2B /* Work Timer Today */ = {
 			isa = PBXNativeTarget;
@@ -189,7 +314,7 @@
 		723EF38A203FC9D600E27096 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Michael Mahon";
 				TargetAttributes = {
@@ -201,6 +326,14 @@
 								enabled = 1;
 							};
 						};
+					};
+					72A450CD2172B4CC00CC6704 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
+					72A450D92172B4CD00CC6704 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 					};
 					72E2CE112041392D002E1A2B = {
 						CreatedOnToolsVersion = 9.2;
@@ -228,6 +361,8 @@
 			targets = (
 				723EF391203FC9D600E27096 /* WorkTimer */,
 				72E2CE112041392D002E1A2B /* Work Timer Today */,
+				72A450CD2172B4CC00CC6704 /* WorkTimerWatch */,
+				72A450D92172B4CD00CC6704 /* WorkTimerWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +375,23 @@
 				723EF3A2203FC9D600E27096 /* LaunchScreen.storyboard in Resources */,
 				723EF39F203FC9D600E27096 /* Assets.xcassets in Resources */,
 				723EF39D203FC9D600E27096 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A450CC2172B4CC00CC6704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A450D42172B4CD00CC6704 /* Assets.xcassets in Resources */,
+				72A450D22172B4CC00CC6704 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A450D82172B4CD00CC6704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A450E82172B4CE00CC6704 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +439,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723EF39A203FC9D600E27096 /* SecondViewController.swift in Sources */,
 				72E2CE2720413B69002E1A2B /* Data.swift in Sources */,
 				723EF396203FC9D600E27096 /* AppDelegate.swift in Sources */,
 				723EF398203FC9D600E27096 /* FirstViewController.swift in Sources */,
 				723EF3AA203FD5A800E27096 /* EditTimeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A450D62172B4CD00CC6704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A450E42172B4CD00CC6704 /* NotificationController.swift in Sources */,
+				72A450E62172B4CD00CC6704 /* ComplicationController.swift in Sources */,
+				72A450E22172B4CD00CC6704 /* ExtensionDelegate.swift in Sources */,
+				72A450E02172B4CD00CC6704 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +469,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		72A450DD2172B4CD00CC6704 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72A450D92172B4CD00CC6704 /* WorkTimerWatch Extension */;
+			targetProxy = 72A450DC2172B4CD00CC6704 /* PBXContainerItemProxy */;
+		};
+		72A450EC2172B4CE00CC6704 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72A450CD2172B4CC00CC6704 /* WorkTimerWatch */;
+			targetProxy = 72A450EB2172B4CE00CC6704 /* PBXContainerItemProxy */;
+		};
 		72E2CE1E2041392D002E1A2B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 72E2CE112041392D002E1A2B /* Work Timer Today */;
@@ -329,6 +501,14 @@
 				723EF3A1203FC9D600E27096 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		72A450D02172B4CC00CC6704 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A450D12172B4CC00CC6704 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		72E2CE192041392D002E1A2B /* MainInterface.storyboard */ = {
@@ -492,6 +672,91 @@
 			};
 			name = Release;
 		};
+		72A450EF2172B4CE00CC6704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZL5FF9567;
+				INFOPLIST_FILE = "WorkTimerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikemahon.WorkTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		72A450F02172B4CE00CC6704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZL5FF9567;
+				INFOPLIST_FILE = "WorkTimerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikemahon.WorkTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		72A450F32172B4CE00CC6704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZL5FF9567;
+				IBSC_MODULE = WorkTimerWatch_Extension;
+				INFOPLIST_FILE = WorkTimerWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikemahon.WorkTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		72A450F42172B4CE00CC6704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZL5FF9567;
+				IBSC_MODULE = WorkTimerWatch_Extension;
+				INFOPLIST_FILE = WorkTimerWatch/Info.plist;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikemahon.WorkTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 		72E2CE212041392D002E1A2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,6 +812,24 @@
 			buildConfigurations = (
 				723EF3A7203FC9D600E27096 /* Debug */,
 				723EF3A8203FC9D600E27096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A450EE2172B4CE00CC6704 /* Build configuration list for PBXNativeTarget "WorkTimerWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A450EF2172B4CE00CC6704 /* Debug */,
+				72A450F02172B4CE00CC6704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A450F22172B4CE00CC6704 /* Build configuration list for PBXNativeTarget "WorkTimerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A450F32172B4CE00CC6704 /* Debug */,
+				72A450F42172B4CE00CC6704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

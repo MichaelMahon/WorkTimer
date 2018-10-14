@@ -8,10 +8,10 @@
 
 import UIKit
 import UserNotifications
+import WatchConnectivity
 
-class FirstViewController: UIViewController {
-    
-    
+class FirstViewController: UIViewController, WCSessionDelegate {
+
     @IBOutlet weak var timeLeftContainer: UIView!
     @IBOutlet weak var timeLeftView: UIView!
     @IBOutlet weak var timeLeftLbl: UILabel!
@@ -24,6 +24,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var clearBtn: UIButton!
     
     var timer = Timer()
+    var session: WCSession!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +48,7 @@ class FirstViewController: UIViewController {
         clearBtn.layer.borderColor = UIColor.white.cgColor
         clearBtn.layer.borderWidth = 3
         
-        
+        startSession()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -57,6 +58,11 @@ class FirstViewController: UIViewController {
             timer.invalidate()
             updateEndTime()
             runTimer()
+            updateWatch()
+        }
+        
+        if WCSession.isSupported() && !session.isReachable {
+            startSession()
         }
     }
     
@@ -165,8 +171,44 @@ class FirstViewController: UIViewController {
         endTime = Date().addingTimeInterval(8.5 * 60.0 * 60.0)
         dateSet = false
         timer.invalidate()
-        updateEndTime()
-        runTimer()
+        performSegue(withIdentifier: "EditTime", sender: nil)
+    }
+    
+    func startSession() {
+        if WCSession.isSupported() {
+            session = WCSession.default
+            session?.delegate = self
+            session?.activate()
+        }
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        
+        let endTimeData = NSKeyedArchiver.archivedData(withRootObject: endTime)
+        
+        let message = ["data": endTimeData]
+        replyHandler(message)
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print()
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print()
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        updateWatch()
+    }
+    
+    @objc func updateWatch() {
+        if let validSession = session {
+            
+            let endTimeData = NSKeyedArchiver.archivedData(withRootObject: endTime)
+            
+            session?.sendMessageData(endTimeData, replyHandler: nil, errorHandler: nil)
+        }
     }
     
 }
